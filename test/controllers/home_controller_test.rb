@@ -1,8 +1,18 @@
 require 'test_helper'
 
 class HomeControllerTest < ActionController::TestCase
-  test "should get index" do
-    get :index
+  test "should get contact" do
+    get :contact
+    assert_response :success
+  end
+
+  test "should get about" do
+    get :about
+    assert_response :success
+  end
+
+  test "should get admin" do
+    get :admin
     assert_response :success
   end
 

@@ -1,11 +1,14 @@
 Msquare::Application.routes.draw do
+  
+  get "home/contact"
+  get "home/about"
+  get "home/admin"
   root "home#index"
   
   resources :products
-
+  resources :home
   resources :shopping_cart_items
 
-  devise_for :admins
   # devise_for :users
   
   # The priority is based upon order of creation: first created -> highest priority.
